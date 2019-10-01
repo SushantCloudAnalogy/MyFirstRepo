@@ -10,7 +10,7 @@ public with sharing class TestApex {
 
         if (accList != null && accList.size() > 0) {
 
-            System.debug('Sushant Branch Code ============>');
+            System.debug('Sushant Branch Code ====>');
         }
     }
 }
