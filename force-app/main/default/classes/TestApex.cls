@@ -16,6 +16,11 @@ public with sharing class TestApex {
                 System.debug('Contact is Present ');
             }
 
+            for (Account accObj : accList) {
+                accIdVSAccountMap.put(acc.id, acc);
+            }
+
+            System.debug('Account List------------------------------------------------------>')
         }
     }
 }
