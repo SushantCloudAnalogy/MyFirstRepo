@@ -12,6 +12,16 @@ public with sharing class TestApex {
 
             System.debug('Sushant Branch Code ====>');
             System.debug('<======Sushant Branch Code===========> ');
+            conName = [Select Id,LastName, AccountId From Contact Where AccountId IN: accList];
+            if(conName != null && conName.size() > 0){
+                System.debug('Contact is Present ');
+            }
+
+            for (Account accObj : accList) {
+                accIdVSAccountMap.put(acc.id, acc);
+            }
+
+            System.debug('Master Comment');
         }
     }
 }
